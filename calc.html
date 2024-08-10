@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" type="img/png" href="90.png">
+	<title>Calculator</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body style="background-image: url(background3.png); background-repeat: no-repeat; background-position: center; background-attachment: fixed; background-size: cover">
+	<div style="text-align: center;">
+		<br><br>
+		<input type="text" id="display" readonly>
+		<br> <br>
+
+		<div class="grid">
+			<button>M+</button>
+			<button>M-</button>
+			<button onclick="showIt('1')">1</button>
+			<button onclick="showIt('2')">2</button>
+
+			<button onclick="showIt('+')">+</button>
+			<button onclick="showIt('3')">3</button>
+			<button onclick="showIt('4')">4</button>
+			<button onclick="showIt('5')">5</button>
+
+			<button onclick="showIt('-')">-</button>
+			<button onclick="showIt('6')">6</button>
+			<button onclick="showIt('7')">7</button>
+			<button onclick="showIt('8')">8</button>
+
+			<button onclick="showIt('*')">*</button>
+			<button onclick="showIt('9')">9</button>
+			<button onclick="showIt('0')">0</button>
+			<button onclick="showIt('00')">00</button>
+
+			<button onclick="showIt('/')">/</button>
+			<button onclick="result()">=</button>
+			<button onclick="cleanIt()">AC</button>
+			<button onclick="showIt('.')">.</button>
+		</div>
+
+
+	</div>
+
+	<script src="calc.js"></script>
+</body>
+</html>
